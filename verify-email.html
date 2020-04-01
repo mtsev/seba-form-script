@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>  
+   <p>Hi <?= name ?>,</p>
+   
+   <p>Please take a moment to confirm that the following details are correct. 
+      If there's any mistakes, please reply to this email 
+      or contact us at <?= replyto ?>.</p>
+
+   <p><strong>Full name:</strong> <?= name ?><br>
+      <strong>Email:</strong> <?= email ?><br>
+      <strong>Discord name:</strong> <?= discord ?><br>
+      <strong><?= type ?>:</strong> <?= value ?></p>
+      
+   <p>To verify, please enter the following code in the #verification channel of <a href="<?= server ?>">our server</a>:</p>
+      
+   <h3>!verify <?= code ?></h3>
+      
+   <p>In accordance with Arc guidelines, we're required to verify that your details are correct 
+      before you can participate in our server. If you don't verify, you'll still be able to 
+      read messages but you won't be able to send messages or join voice channels.</p>
+      
+   <p>Verifying will also mean you can join our awesome new Discord events and we'd love to see you there!</p>
+   
+   <p>See you online,<br><?= valediction ?></p>
+   
+  </body>
+</html>
