@@ -9,7 +9,7 @@ function onFormSubmit(e) {
   };
   
   // Verification code
-  var code = getPad(values[discord].toString() + seed, 6);
+  var code = getPad(values[discord].toString().toLowerCase() + seed, 6);
   Logger.log("Code: " + code);
   
   // Email subject
