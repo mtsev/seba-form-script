@@ -11,6 +11,9 @@ function onFormSubmit(e) {
   // Verification code
   var code = getPad(values[discord].toString().toLowerCase() + seed, 6);
   Logger.log("Code: " + code);
+
+  // Add submission to database
+  if (typeof insertSubmission === 'function') insertSubmission(values);
   
   // Email subject
   var subject = "Discord verification for " + serverName;
